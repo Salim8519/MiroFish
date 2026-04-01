@@ -6,18 +6,18 @@
         <div class="card-header">
           <div class="step-info">
             <span class="step-num">01</span>
-            <span class="step-title">模拟实例初始化</span>
+            <span class="step-title">Simulation Instance Initialization</span>
           </div>
           <div class="step-status">
-            <span v-if="phase > 0" class="badge success">已完成</span>
-            <span v-else class="badge processing">初始化</span>
+            <span v-if="phase > 0" class="badge success">Completed</span>
+            <span v-else class="badge processing">Initializing</span>
           </div>
         </div>
         
         <div class="card-content">
           <p class="api-note">POST /api/simulation/create</p>
           <p class="description">
-            新建simulation实例，拉取模拟世界参数模版
+            Create new simulation instance, fetch simulation world parameter templates
           </p>
 
           <div v-if="simulationId" class="info-card">
@@ -35,7 +35,7 @@
             </div>
             <div class="info-row">
               <span class="info-label">Task ID</span>
-              <span class="info-value mono">{{ taskId || '异步任务已完成' }}</span>
+              <span class="info-value mono">{{ taskId || 'Async task completed' }}</span>
             </div>
           </div>
         </div>
